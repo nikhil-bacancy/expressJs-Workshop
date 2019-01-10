@@ -6,7 +6,7 @@ const app = express();
 
 
 app.use(stylus.middleware(process.argv[3] || path.join(__dirname, 'css')))
-app.use(express.static(process.argv[3] || path.join(__dirname, 'public') || path.join(__dirname, 'css')))
+app.use(express.static(process.argv[3] || path.join(__dirname, 'public')))
 
 
 app.listen(process.argv[2] || 8080);
